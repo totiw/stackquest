@@ -13,7 +13,7 @@ const propTypes = {
   placeholder: PropTypes.string,
 };
 
-function InputText({
+function InputPassword({
   id = "",
   name = "",
   size = "md",
@@ -23,21 +23,19 @@ function InputText({
   placeholder = "",
   ...props
 }) {
-  const handleInputChange = (e) => {
-    const value = e.target.value.replace(/[^A-Za-z0-9]/g, ""); // Hapus karakter selain huruf dan angka
-    e.target.value = value; // Perbarui nilai input
-  };
-
   return (
-    <div className={classNames("input-text")}>
+    <div className={classNames("input-password")}>
       {icon}
       <input
-        type="text"
+        type="password"
         id={id}
         name={name}
-        onInput={handleInputChange}
         onChange={onChange}
-        className={classNames(`input-text-${size}`, "input-class", className)}
+        className={classNames(
+          `input-password-${size}`,
+          "input-class",
+          className,
+        )}
         placeholder={placeholder}
         {...props}
       />
@@ -45,6 +43,6 @@ function InputText({
   );
 }
 
-InputText.propTypes = propTypes;
+InputPassword.propTypes = propTypes;
 
-export default InputText;
+export default InputPassword;

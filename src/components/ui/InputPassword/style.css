@@ -1,4 +1,4 @@
-.input-text {
+.input-password {
   @apply flex flex-row font-poppins;
 }
 
@@ -6,18 +6,18 @@
   @apply w-full focus-visible:outline-none px-2;
 }
 
-.input-text-xs {
+.input-password-xs {
   @apply h-3;
 }
-.input-text-sm {
+.input-password-sm {
   @apply h-7;
 }
-.input-text-md {
+.input-password-md {
   @apply h-10;
 }
-.input-text-lg {
+.input-password-lg {
   @apply h-14;
 }
-.input-text-xl {
+.input-password-xl {
   @apply h-16;
 }
