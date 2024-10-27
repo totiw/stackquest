@@ -1,5 +1,5 @@
 .btn {
-  @apply h-fit normal-case rounded-md shadow-md font-semibold hover:brightness-90;
+  @apply h-fit font-poppins normal-case rounded-md shadow-md font-semibold hover:brightness-90;
 }
 
 /* VARIANT */
