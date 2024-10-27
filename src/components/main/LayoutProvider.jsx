@@ -15,7 +15,7 @@ function LayoutProvider({ children }) {
   const pathname = usePathname();
   return (
     <>
-      {pathname !== "/login" && <Navbar />}
+      {pathname !== "/login" && pathname !== "/register" && <Navbar />}
       {children}
     </>
   );

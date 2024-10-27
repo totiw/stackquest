@@ -7,7 +7,9 @@ function Navbar() {
   return (
     <div className="bg-secondary h-16 text-white flex flex-row items-center justify-around">
       <div>
-        <h2 className="font-extrabold font-poppins">{Constants.brand.name}</h2>
+        <h2 className="text-xl font-bold font-poppins">
+          {Constants.brand.name}
+        </h2>
       </div>
       <div className="flex flex-row gap-5">
         <Button
