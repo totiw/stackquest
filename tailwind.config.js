@@ -13,7 +13,8 @@ module.exports = {
         secondary: "var(--secondary)",
         accent: {
           DEFAULT: "rgb(var(--accent-color))",
-          20: "rgb(var(--accent-color), 0.2)",
+          primary: "rgb(var(--accent-primary), 1)",
+          secondary: "rgb(var(--accent-secondary), 0.2)",
         },
       },
       fontFamily: {

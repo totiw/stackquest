@@ -7,6 +7,8 @@
   --primary: #c5a100;
   --secondary: #000c25;
   --accent-color: 121, 118, 255; /* RGB values without alpha */
+  --accent-primary: 255, 231, 121;
+  --accent-secondary: 121, 118, 255;
 }
 
 @media (prefers-color-scheme: dark) {
