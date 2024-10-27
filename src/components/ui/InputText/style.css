@@ -1,5 +1,9 @@
 .input-text {
-  @apply bg-accent-secondary px-2 focus-visible:outline-none font-poppins;
+  @apply flex flex-row bg-accent-secondary font-poppins;
+}
+
+.input-class {
+  @apply w-full focus-visible:outline-none px-2;
 }
 
 .input-text-xs {

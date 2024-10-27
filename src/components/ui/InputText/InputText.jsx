@@ -7,16 +7,20 @@ const propTypes = {
   id: PropTypes.string,
   name: PropTypes.string,
   size: PropTypes.oneOf(["xs", "sm", "md", "lg", "xl"]),
+  icon: PropTypes.node || null,
   onChange: PropTypes.func,
   className: PropTypes.string,
+  placeholder: PropTypes.string,
 };
 
 function InputText({
   id = "",
   name = "",
   size = "md",
+  icon = null,
   onChange = () => {},
   className = "",
+  placeholder = "",
   ...props
 }) {
   const handleInputChange = (e) => {
@@ -25,15 +29,19 @@ function InputText({
   };
 
   return (
-    <input
-      type="text"
-      id={id}
-      name={name}
-      onInput={handleInputChange}
-      onChange={onChange}
-      className={classNames("input-text", `input-text-${size}`, className)}
-      {...props}
-    />
+    <div className={classNames("input-text")}>
+      {icon}
+      <input
+        type="text"
+        id={id}
+        name={name}
+        onInput={handleInputChange}
+        onChange={onChange}
+        className={classNames(`input-text-${size}`, "input-class", className)}
+        placeholder={placeholder}
+        {...props}
+      />
+    </div>
   );
 }
 
