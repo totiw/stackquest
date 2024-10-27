@@ -1,0 +1,42 @@
+.btn {
+  @apply h-fit normal-case rounded-md shadow-md font-semibold hover:brightness-90;
+}
+
+/* VARIANT */
+.btn-primary {
+  @apply bg-primary text-white;
+}
+.btn-secondary {
+  @apply bg-secondary text-white;
+}
+.btn-accent {
+  @apply bg-accent-20 text-white;
+}
+
+/* SIZE */
+.btn-size-xs {
+  @apply text-xs py-0 px-1;
+}
+
+.btn-size-sm {
+  @apply text-sm py-1 px-2;
+}
+
+.btn-size-md {
+  @apply text-base py-2 px-4;
+}
+
+.btn-size-lg {
+  @apply text-lg py-3 px-6;
+}
+
+/* OUTLINE */
+.btn-outline-primary {
+  @apply outline outline-[1.5px] outline-primary text-primary;
+}
+.btn-outline-secondary {
+  @apply outline outline-[1.5px] outline-secondary text-secondary;
+}
+.btn-outline-accent {
+  @apply outline outline-[1.5px] outline-accent text-accent;
+}

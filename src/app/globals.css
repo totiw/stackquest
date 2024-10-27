@@ -4,8 +4,9 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --accent-color: #c5a100;
+  --primary: #c5a100;
+  --secondary: #000c25;
+  --accent-color: 121, 118, 255; /* RGB values without alpha */
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,14 +1,36 @@
 import React from "react";
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from "@/components/main/Navbar";
 import PropTypes from "prop-types";
+import LayoutProvider from "@/components/main/LayoutProvider";
 
-const poppins = localFont({
-  src: "./fonts/Poppins-Regular.ttf",
-  variable: "--font-poppins",
-  weight: "100 900",
-});
+const poppins = localFont(
+  {
+    src: "./fonts/Poppins-Light.ttf",
+    variable: "--font-poppins",
+    weight: "300",
+  },
+  {
+    src: "./fonts/Poppins-Regular.ttf",
+    variable: "--font-poppins",
+    weight: "400",
+  },
+  {
+    src: "./fonts/Poppins-Bold.ttf",
+    variable: "--font-poppins",
+    weight: "700",
+  },
+  {
+    src: "./fonts/Poppins-ExtraBold.ttf",
+    variable: "--font-poppins",
+    weight: "800",
+  },
+  {
+    src: "./fonts/Poppins-Black.ttf",
+    variable: "--font-poppins",
+    weight: "900",
+  },
+);
 
 export const metadata = {
   title: "Create Next App",
@@ -23,8 +45,7 @@ function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.variable} antialiased`}>
-        <Navbar />
-        {children}
+        <LayoutProvider>{children}</LayoutProvider>
       </body>
     </html>
   );

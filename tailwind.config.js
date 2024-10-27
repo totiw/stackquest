@@ -9,8 +9,15 @@ module.exports = {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
-        accent: "var(--accent-color)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        accent: {
+          DEFAULT: "rgb(var(--accent-color))",
+          20: "rgb(var(--accent-color), 0.2)",
+        },
+      },
+      fontFamily: {
+        poppins: "var(--font-poppins)",
       },
     },
   },

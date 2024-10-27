@@ -7,4 +7,5 @@ const DEFAULT_PORT = 3000;
 const EXE_HOST = process.env.HOST || DEFAULT_HOST;
 const EXE_PORT = process.env.PORT || DEFAULT_PORT;
 
-execSync(`npx next dev -H ${EXE_HOST} -p ${EXE_PORT}`);
+const output = execSync(`npx next dev -H ${EXE_HOST} -p ${EXE_PORT}`);
+console.log(output.toString());
