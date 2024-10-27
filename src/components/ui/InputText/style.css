@@ -1,5 +1,5 @@
 .input-text {
-  @apply flex flex-row bg-accent-secondary font-poppins;
+  @apply flex flex-row font-poppins;
 }
 
 .input-class {
