@@ -1,0 +1,19 @@
+.input-text {
+  @apply bg-accent-secondary px-2 focus-visible:outline-none font-poppins;
+}
+
+.input-text-xs {
+  @apply h-3;
+}
+.input-text-sm {
+  @apply h-7;
+}
+.input-text-md {
+  @apply h-10;
+}
+.input-text-lg {
+  @apply h-14;
+}
+.input-text-xl {
+  @apply h-16;
+}
